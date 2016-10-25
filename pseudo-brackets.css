@@ -1,0 +1,64 @@
+<div class="bracketed-heading-secondary" style="text-align: center;">
+  <h3><i class="brackets">
+    START YOUR PATH TO SUCCESS
+   </i></h3>
+</div>
+
+/*Generic Bracket Code*/
+i.brackets:before,
+i.brackets:after {
+  height: 1em;
+  width: 1em;
+  position: absolute;
+  content: '';
+}
+
+i.brackets{
+  padding: 0.5em 0.8em;
+  position: relative;
+}
+
+:before i.brackets,
+:after i.brackets {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+} 
+
+/* White Brackets*/
+.bracketed-heading-white {
+    position: relative;
+}
+
+.bracketed-heading-white i.brackets:before {
+  right: 0;
+  bottom: 0;
+  border-right: 0.15em solid #ffffff;
+  border-bottom: 0.15em solid #ffffff;
+}
+
+.bracketed-heading-white i.brackets:after {
+  left: 0;
+  top: 0;
+  border-left: 0.15em solid #ffffff;
+  border-top: 0.15em solid #ffffff;
+}
+
+/*Blue Brackets*/
+.bracketed-heading-secondary {
+    position: relative;
+}
+
+.bracketed-heading-secondary i.brackets:after {
+  left: 0;
+  top: 0;
+  border-left: 0.15em solid #002E6D;
+  border-top: 0.15em solid #002E6D;
+}
+
+.bracketed-heading-secondary i.brackets:before {
+  right: 0;
+  bottom: 0;
+  border-right: 0.15em solid #002E6D;
+  border-bottom: 0.15em solid #002E6D;
+}

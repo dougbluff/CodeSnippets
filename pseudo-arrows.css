@@ -1,0 +1,18 @@
+/*Arrows in CSS - add the arrow-class to the section to trigger the psuedo-element arrow*/
+/*Generic Arrow Code*/
+.arrow-left-middle-secondary{
+    position: relative;
+}
+
+/*Specific Arrows*/
+.arrow-left-middle-secondary:before { 
+    content:"";
+    border-style: solid;
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #002E6D transparent transparent;
+    position: absolute;
+    right: 50%;
+    bottom: 45%;
+    z-index: 99999;
+}
+
